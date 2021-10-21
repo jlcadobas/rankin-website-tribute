@@ -1,6 +1,7 @@
 
     //Images should be on the same sizes.
-    //Array contains three images in the image/ folder,   
+    //Array contains three images in the images/ folder.
+    //Will be used for changing the "src" attribute value 
 
 images = [
 
@@ -11,25 +12,26 @@ images = [
 
     //Changes picture on each button click.
 
-    index = 1;
-    
-    function nextPicture() {
+    index = 0;
 
+    function nextPicture() {
+        
             var nextSrc = document.getElementById("change-image");
+
+                if (index >= 2) {
+                        
+                    index = 0;
+                    //nextSrc.setAttribute("src", images[index]);
+                }
 
                 // setAttribute gets parameters (attribute, value)
                 // updates the attribute of the element with 'change-image' id.
 
                 //gets the value of image index in the array
+          
                 nextSrc.setAttribute("src", images[index]);
-
-                if (index > 2) {
-                    
-                    index = 0;
-                    nextSrc.setAttribute("src", images[index]);
-                }
-
                 index++;
+ 
         }
 
     //Behaves exactly like the previous function but loops back to the last image.    
@@ -37,15 +39,18 @@ images = [
 
             var prevSrc = document.getElementById("change-image");
 
-                prevSrc.setAttribute("src", images[index]);
+                //newIndex = index;
 
                 if (index < 0) {
 
                     index = 2;
-                    prevSrc.setAttribute("src", images[index]);
+                    //prevSrc.setAttribute("src", images[index]);
                 }
-                
+
+                prevSrc.setAttribute("src", images[index]);
                 index--;
+
+                
     }
 
 
