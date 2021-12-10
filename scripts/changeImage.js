@@ -18,20 +18,27 @@ images = [
         
             var nextSrc = document.getElementById("change-image");
 
-                if (index >= 2) {
+                if (index == 2) {
                         
                     index = 0;
-                    //nextSrc.setAttribute("src", images[index]);
                 }
 
+                    else if (index == 1) {
+
+                        index += 1;
+                    }
+
+                        else {
+
+                            index += 1;
+                        }
                 // setAttribute gets parameters (attribute, value)
                 // updates the attribute of the element with 'change-image' id.
 
                 //gets the value of image index in the array
           
                 nextSrc.setAttribute("src", images[index]);
-                index++;
- 
+                //index++;
         }
 
     //Behaves exactly like the previous function but loops back to the last image.    
@@ -41,16 +48,24 @@ images = [
 
                 //newIndex = index;
 
-                if (index < 0) {
+                if (index == 2) {
 
-                    index = 2;
+                    index -= 1;
                     //prevSrc.setAttribute("src", images[index]);
                 }
 
-                prevSrc.setAttribute("src", images[index]);
-                index--;
+                    else if (index == 1) {
 
-                
+                        index -= 1;
+                    }
+
+                        else {
+
+                            index = 2;
+                        }
+                        
+                prevSrc.setAttribute("src", images[index]);
+                //index--;                
     }
 
 

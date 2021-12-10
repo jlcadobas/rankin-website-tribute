@@ -64,6 +64,12 @@ div img {
     padding-bottom: 11px;
 }
 
+.scrollbar {
+
+    overflow-y: scroll;
+
+}
+
 #title, #synopsis {
 
     text-align: justify;
