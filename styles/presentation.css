@@ -1,6 +1,6 @@
 ul {
 
-    font-size: 120%;
+    font-size: 105%;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -23,6 +23,7 @@ a:hover {
 #synopsis {
 
     font-style: Arial, Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 13.5px;
+    text-indent: 2.5em;
 }
 

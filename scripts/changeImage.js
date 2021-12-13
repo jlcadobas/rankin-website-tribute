@@ -65,7 +65,7 @@ images = [
                         }
                         
                 prevSrc.setAttribute("src", images[index]);
-                //index--;                
+                //index--;
     }
 
 

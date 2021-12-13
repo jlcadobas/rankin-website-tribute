@@ -13,7 +13,7 @@ body {
 .nav-column {
 
     float: left;
-    width: 300px;
+    width: 275px;
     background-color: gray;
     height: 100vh;
     opacity: 0.75;
@@ -22,10 +22,8 @@ body {
 .margin-top-bot {
 
     margin-top: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
-
-
 
 ul {
 
@@ -35,48 +33,40 @@ ul {
 li {
 
     list-style-type: none;
-    padding: 20px 50px;
+    padding: 15px 50px;
     color: white;
 }
 
 .picture-column {
 
     float: left;
-    width: 640px;
-    height: auto;
+    width: 580px;
+    height: 100%;
     object-fit: fill;
-    max-width: 100%;
 }
 
 div img {
 
-    width: 640px;
+    width: 580px;
     height: 100%;    
     object-fit: fill;
     opacity: 0.95;
-    max-width: 100%;
-    height: auto;
 }
 
 .description-column {
 
-    float: left;
-    width: 570px;
-    height: 100%;
+    float: right;
+    width: 511px;
+    height: 100vh;
     background-color: black !important;
     padding-bottom: 11px;
-}
-
-.scrollbar {
-
-    overflow-y: scroll;
 
 }
 
 #title, #synopsis {
 
     text-align: justify;
-    padding: 40px 40px 0px 60px;
+    padding: 30px 40px 0px 50px;
     line-height: 1.6em;
     color: white !important;
 }
@@ -94,7 +84,7 @@ div img {
     width: 50px;
     height: 75px;
     opacity: 0.95;
-    margin-top: 350px;
+    margin-top: 300px;
     opacity: 0.1;
     background-color: white;
 }
@@ -108,5 +98,6 @@ div img {
 
     opacity: 0.3;
 }
+
 
 
