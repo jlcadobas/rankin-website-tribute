@@ -1,0 +1,154 @@
+    
+    * {
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*
+        Navigation Column
+    */
+
+    .nav-column {
+
+        width: 20%;
+        background-color: #808080;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .logo {
+
+        margin: 2em 0em;
+        color: #47DBEB;
+        font-size: 1.25em;
+        font-weight: 1000;
+        text-transform: uppercase;
+    }
+
+    ul {
+
+        font-size: 1.0625em;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+
+    li {
+
+        list-style-type: none;
+        margin: 2em 0em;
+        color: white;
+    }
+
+    a {
+
+        color: white;
+        text-decoration: none;
+    }
+
+    a.active, a:hover {
+
+        color: black;
+    }
+
+        /*
+            Picture Column
+        */
+
+        .picture-column {
+
+            width: 40%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .picture-column img {
+
+            width: 100%;
+            height: 100%;
+        }
+
+            /*
+                Description Column
+            */
+
+            .description-column {
+
+                width: 40%;
+                height: 100vh;
+                background-color: black;
+                color: white;
+                overflow-y: scroll;
+            }
+
+            h1 {
+
+                text-align: center;
+                margin: 1em 0em;
+                color:#47DBEB
+            }
+        
+            p {
+        
+                text-align: justify;
+                margin: 1.25em 3.125em;
+                text-indent: 1.5em;
+                line-height: 1.55em;
+            }
+
+            /* Scroll Bar */
+
+            ::-webkit-scrollbar {
+                
+                width: 10px;
+            }
+              
+            ::-webkit-scrollbar-track {
+                
+                background: #f1f1f1; 
+            }
+
+            ::-webkit-scrollbar-thumb {
+                
+                background: #888; 
+            }
+              
+            ::-webkit-scrollbar-thumb:hover {
+                
+                background: #555; 
+            }
+            
+    input {
+
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        z-index: 9;
+        opacity: 0.2;
+        background-color: white;
+    }
+
+    .prev {
+
+        bottom: 50vh;
+        left: 20vw;
+    }
+
+    .next {
+
+        bottom: 50vh;
+        right: 40vw;
+    }
+
+    .prev:hover, .next:hover {
+
+        opacity: 0.3;
+    }
