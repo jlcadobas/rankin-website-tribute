@@ -44,7 +44,7 @@
     li {
 
         list-style-type: none;
-        margin: 2em 0em;
+        margin: 2.25em 0em;
         color: white;
     }
 
@@ -93,7 +93,6 @@
 
                 text-align: center;
                 margin: 1em 0em;
-                color:#47DBEB
             }
         
             p {
@@ -102,6 +101,11 @@
                 margin: 1.25em 3.125em;
                 text-indent: 1.5em;
                 line-height: 1.55em;
+            }
+
+            .description-column li:hover {
+
+                color: gray;
             }
 
             /* Scroll Bar */
@@ -151,4 +155,51 @@
     .prev:hover, .next:hover {
 
         opacity: 0.3;
+    }
+
+
+    .nav-column img {
+
+        display: none;
+    }
+
+    @media only screen and (max-width: 1200px) {
+
+        .nav-column img {
+
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin: 1em auto;
+        }
+
+        .nav-column {
+
+            width: 5%;
+        }
+
+        .nav-column li {
+
+            display: none;
+        }
+
+        .picture-column {
+
+            width: 50%;
+        }
+
+        .description-column {
+
+            width: 45%;
+        }
+
+        .prev {
+
+            left: 5vw;
+        }
+
+        .next {
+
+            right: 45vw;
+        }
     }
